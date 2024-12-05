@@ -1,0 +1,68 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FFD700; /* Fundo amarelo */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#contador {
+    font-size: 3em;
+    letter-spacing: 5px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão vermelho para contagem manual */
+#incrementButton {
+    background-color: #e74c3c;
+}
+
+#incrementButton:hover {
+    background-color: #c0392b; /* Vermelho mais escuro ao passar o rato */
+}
+
+/* Botão verde para iniciar */
+#startButton {
+    background-color: #2ecc71;
+}
+
+#startButton:hover {
+    background-color: #27ae60; /* Verde mais escuro ao passar o rato */
+}
+
+/* Botão azul para parar */
+#stopButton {
+    background-color: #3498db;
+}
+
+#stopButton:hover {
+    background-color: #2980b9; /* Azul mais escuro ao passar o rato */
+}

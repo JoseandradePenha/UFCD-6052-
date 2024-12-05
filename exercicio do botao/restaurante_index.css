@@ -1,0 +1,104 @@
+/* Usar uma fonte moderna */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Estilo dos ecrãs */
+.screen {
+    background-color: #f9fafc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos secundários */
+.screen h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Texto grande com números de pessoas ou tempo */
+#total-pessoas, #tempo-espera {
+    font-size: 36px;
+    color: #3a86ff;
+    font-weight: 600;
+}
+
+/* Botões */
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button#entrar {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button#entrar:hover {
+    background-color: #218838;
+}
+
+button#sair {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button#sair:hover {
+    background-color: #c82333;
+}
+
+button#calcular-espera {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button#calcular-espera:hover {
+    background-color: #0069d9;
+}
+
+/* Mensagens de status */
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}

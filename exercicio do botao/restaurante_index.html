@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Ocupação do Restaurante</title>
+    <link rel="stylesheet" href="restaurante_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Ocupação</h1>
+        
+        <!-- Ecrã 1: Exibe o número total de pessoas no restaurante -->
+        <div class="screen" id="pessoas-screen">
+            <h2>Número de Pessoas</h2>
+            <p id="total-pessoas">0</p>
+        </div>
+
+        <!-- Ecrã 2: Exibe o tempo de espera -->
+        <div class="screen" id="tempo-espera-screen">
+            <h2>Tempo de Espera</h2>
+            <p id="tempo-espera">Nenhum tempo de espera</p>
+        </div>
+
+        <!-- Comandos: Entrada, Saída e Tempo de Espera -->
+        <div class="buttons">
+            <button id="entrar" onclick="adicionarPessoa()">Entrada</button>
+            <button id="sair" onclick="removerPessoa()">Saída</button>
+            <button id="calcular-espera" onclick="calcularEspera()">Ver Tempo de Espera</button>
+        </div>
+
+        <!-- Status geral do restaurante (capacidade atingida ou não) -->
+        <p id="status"></p>
+    </div>
+    
+    <script src="restaurante_index.js"></script>
+</body>
+</html>

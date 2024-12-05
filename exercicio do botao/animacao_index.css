@@ -1,0 +1,59 @@
+/* Fundo azul-bebé */
+body {
+    background-color: #ADD8E6; /* Azul-bebé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para o cubo */
+#cubo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg); /* Ponto inicial */
+    transition: transform 0.5s;
+}
+
+/* Cada face do cubo */
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+}
+
+/* Estilização de cada face com diferentes cores */
+.frente {
+    background-color: red;
+    transform: translateZ(100px);
+}
+
+.tras {
+    background-color: yellow;
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.direita {
+    background-color: green;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.esquerda {
+    background-color: black;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.topo {
+    background-color: blue;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.base {
+    background-color: purple;
+    transform: rotateX(-90deg) translateZ(100px);
+}
